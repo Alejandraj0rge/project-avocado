@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/project-avocado/static/css/main.073c9b0a.css",
-    "main.js": "/project-avocado/static/js/main.93d2205e.js",
+    "main.css": "/project-avocado/static/css/main.cf75f2b3.css",
+    "main.js": "/project-avocado/static/js/main.7a5b774b.js",
     "static/js/787.8449e91f.chunk.js": "/project-avocado/static/js/787.8449e91f.chunk.js",
-    "static/media/logo.svg": "/project-avocado/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/project-avocado/index.html",
-    "main.073c9b0a.css.map": "/project-avocado/static/css/main.073c9b0a.css.map",
-    "main.93d2205e.js.map": "/project-avocado/static/js/main.93d2205e.js.map",
+    "main.cf75f2b3.css.map": "/project-avocado/static/css/main.cf75f2b3.css.map",
+    "main.7a5b774b.js.map": "/project-avocado/static/js/main.7a5b774b.js.map",
     "787.8449e91f.chunk.js.map": "/project-avocado/static/js/787.8449e91f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.93d2205e.js"
+    "static/css/main.cf75f2b3.css",
+    "static/js/main.7a5b774b.js"
   ]
 }
