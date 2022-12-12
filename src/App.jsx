@@ -11,23 +11,29 @@ function Box() {
 	)
 }
 
+function TopMenu(){
+	return (
+		<div id='top-menu'>
+			<div className='top-menu-2'>Logo</div>
+			<div id="top-menu-1">
+				<div>Services</div>
+				<div>About</div>
+				<div>Our Projects</div>
+				<div>Insight</div>
+			</div>
+			<div className='top-menu-2'>Contact Us</div>
+		</div>
+	)
+}
+
 function App() {
 	return (
 		<div className="App">
-			<div id='top-menu'>
-				<div className='top-menu-2'>Logo</div>
-				<div id="top-menu-1">
-					<div>Services</div>
-					<div>About</div>
-					<div>Our Projects</div>
-					<div>Insight</div>
-				</div>
-				<div className='top-menu-2'>Contact Us</div>
-			</div>
+		<TopMenu/>
 			<div id='top-header'>
 				<div>
-					<div className='title'>DFGDFG</div>
-					<div className='sub-title'>sdsdgg</div>
+					<div className='title'>MY PORTFOLIO</div>
+					<div className='sub-title'>Best now than ever</div>
 				</div>
 				<svg version="1.1" className="shadow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" id="blobSvg" style={{opacity: "1",width: "50%",height:"max-content"}}>
 					<path fill="url(#gradient)" style={{opacity: "1"}}>                            
@@ -68,9 +74,6 @@ function App() {
 								<Box/> 
 							</Canvas>
 						</div>
-						<div>
-							box w cloud
-						</div>
 					</div>
 				</div>
 				<div>
@@ -98,6 +101,7 @@ function App() {
 				<div className='title-1'>email@gmail.com</div>
 				<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 			</div>
+			<TopMenu/>
 		</div>
 	);
 }
