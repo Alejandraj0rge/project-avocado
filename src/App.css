@@ -42,7 +42,7 @@
 	justify-content: space-between;
 	align-items: center;
 	display: flex;
-	height:10vh;
+	height:max-content;
 }
 
 #top-menu-1 {
@@ -69,12 +69,12 @@
 }
 
 .title {
-	font-size: 18vw;
+	font-size: 10vw;
 	text-align: left;
 }
 
 .title-1 {
-	font-size: 10vw;
+	font-size: 8vw;
 }
 
 .sub-title {
