@@ -1,6 +1,9 @@
 import './App.css';
 import { Stars, OrbitControls, Cloud } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber';
+import laptopImage from "./laptop1.png";
+import laptopImage1 from "./laptop2.png";
+import laptopImage2 from "./laptop3.png";
 
 function Exports() {
 	return (
@@ -19,9 +22,9 @@ function Opening() {
 	return (
 		<section class="bg-teal-300 font-bold whitespace-normal">
 			<div class="bg-origin-content p-8">
-				<h1 class="z-10 text-4xl md:text-2xl lg:text-5xl text-slate-100">Alejandra Jorge - Web Development</h1>
+				<h1 class="z-10 text-4xl md:text-2xl lg:text-5xl text-slate-100 absolute top-20 left-10">Alejandra Jorge - Web Development</h1>
 				<img src="//images02.nicepage.com/c461c07a441a5d220e8feb1a/d7dc502250955d50b21bd3f8/ad-min.jpg" alt="" class="max-lg md:max-xl lg:max-2xl z-0 mt-8 mr-auto mb-0"></img>
-				<div class="text-l text-center md:text-xl lg:text-2xl text-teal-500 max-w-2xl object-contain grid grid-flow-row-dense grid-cols-3 grid-rows-1 gap-10">
+				<div class="text-sm text-center md:text-xl lg:text-2xl text-teal-500 max-w-2xl object-contain grid grid-flow-row-dense grid-cols-3 grid-rows-1 gap-10">
 					<div class="bg-slate-100 shadow-md">
 						<div class="">
 							<svg width="max-content" height="max-content" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -91,21 +94,54 @@ function Opening() {
 
 function Projects() {
 	return (
-		<section>
-			<div>	
-				<h1 class="z-10 text-4xl md:text-2xl lg:text-5xl text-slate-800">Retail Web App</h1>
-				<p class="z-10 text-sm md:text-l lg:text-xl text-slate-800">
-				I utilized a component-based architecture. With Angular's powerful component-based approach, I structured the application by breaking it down into modular and reusable components. This architecture offered several benefits, including improved code organization, easier maintainability, and enhanced reusability. By following this approach, I created a scalable and flexible e-commerce platform that met the project's requirements.
-				</p>
-				<button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 rounded">READ MORE</button>
+		<section class="p-10">
+			<div class="project">
+				<div class="pb-5">	
+					<h1 class="z-10 text-4xl md:text-2xl lg:text-5xl text-slate-800">Retail Web App</h1>
+					<p class="z-10 text-sm md:text-l lg:text-xl text-slate-800 pr-40 pt-5 pb-5">
+						I utilized a component-based architecture. With Angular's powerful component-based approach, I structured the application by breaking it down into modular and reusable components. This architecture offered several benefits, including improved code organization, easier maintainability, and enhanced reusability. By following this approach, I created a scalable and flexible e-commerce platform that met the project's requirements.
+					</p>
+					<button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 rounded">READ MORE</button>
+				</div>
+				<div class="u-container-style u-layout-cell u-size-34 u-layout-cell-2">
+					<div class="u-container-layout u-valign-middle-sm u-container-layout-2">
+						<div class="w-1/2 h-1/2 sm:w-1/2 sm:h-1/2 md:w-1/2 md:h-1/2 lg:h-full lg:w-1/2 rounded-full bg-teal-200 absolute -z-10"></div>
+						<img src={laptopImage} alt="image" data-image-width="1200" data-image-height="1034"/>
+					</div>
+				</div>
 			</div>
-			<div class="u-container-style u-layout-cell u-size-34 u-layout-cell-2">
-                <div class="u-container-layout u-valign-middle-sm u-container-layout-2">
-                  <div class="dot absolute -z-10"></div>
-                  <img class="" src="/laptop1.png" alt="image" data-image-width="1200" data-image-height="1034"/>
-                </div>
-            </div>
+			<div class="project">
+				<div class="pb-5">	
+					<h1 class="z-10 text-4xl md:text-2xl lg:text-5xl text-slate-800">CRM Web App</h1>
+					<p class="z-10 text-sm md:text-l lg:text-xl text-slate-800 pr-40 pt-5 pb-5">
+						I developed a SaaS CRM using React, Laravel, and PHP. The project includes features like user authentication, data management, and API integrations. With seamless frontend development in React, efficient backend with Laravel, and server-side processing in PHP, I created a scalable and user-friendly CRM.
+					</p>
+					<button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 rounded">READ MORE</button>
+				</div>
+				<div class="u-container-style u-layout-cell u-size-34 u-layout-cell-2">
+					<div class="u-container-layout u-valign-middle-sm u-container-layout-2">
+						<div class="w-1/2 h-1/2 sm:w-1/2 sm:h-1/2 md:w-1/2 md:h-1/2 lg:h-full lg:w-1/2 rounded-full bg-teal-200 absolute -z-10"></div>
+						<img src={laptopImage1} alt="image" data-image-width="1200" data-image-height="1034"/>
+					</div>
+				</div>
+			</div>
+			<div class="project">
+				<div class="pb-5">	
+					<h1 class="z-10 text-4xl md:text-2xl lg:text-5xl text-slate-800">CRM Web App</h1>
+					<p class="z-10 text-sm md:text-l lg:text-xl text-slate-800 pr-40 pt-5 pb-5">
+						With experience in PHP to Laravel migration, I seamlessly integrated these technologies for a robust platform. I also troubleshooted existing issues and utilized React for an intuitive frontend. Explore my portfolio for a successful demonstration of SaaS CRM development with PHP, Laravel, and React.
+					</p>
+					<button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 rounded">READ MORE</button>
+				</div>
+				<div class="u-container-style u-layout-cell u-size-34 u-layout-cell-2">
+					<div class="u-container-layout u-valign-middle-sm u-container-layout-2">
+						<div class="w-1/2 h-1/2 sm:w-1/2 sm:h-1/2 md:w-1/2 md:h-1/2 lg:h-full lg:w-1/2 rounded-full bg-teal-200 absolute -z-10"></div>
+						<img src={laptopImage2} alt="image" data-image-width="1200" data-image-height="1034"/>
+					</div>
+				</div>
+			</div>
 		</section>
+		
 	);
 }
 
@@ -160,8 +196,8 @@ function App() {
 			{/* <Exports/> */}
 			<Opening/>
 			<Projects/>
-			<Ending/>
-			<Features/>
+			{/* <Ending/> */}
+			{/* <Features/> */}
 		</div>
 	);
 }

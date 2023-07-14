@@ -5,8 +5,8 @@
 }
 
 .dot {
-	height: 80%;
-	width: 80%;
+	height: 50%;
+	width: 50%;
 	background-color: #bbb;
 	border-radius: 50%;
 	display: inline-block;
