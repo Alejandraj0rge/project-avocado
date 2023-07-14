@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/project-avocado/static/css/main.2b5df3d5.css",
-    "main.js": "/project-avocado/static/js/main.212ce6bf.js",
+    "main.css": "/project-avocado/static/css/main.64a13164.css",
+    "main.js": "/project-avocado/static/js/main.74b27179.js",
     "static/js/787.8449e91f.chunk.js": "/project-avocado/static/js/787.8449e91f.chunk.js",
+    "static/media/laptop1.png": "/project-avocado/static/media/laptop1.82a4a7ca3363ea003b65.png",
+    "static/media/laptop2.png": "/project-avocado/static/media/laptop2.7a7958935ab2eab3b555.png",
+    "static/media/laptop3.png": "/project-avocado/static/media/laptop3.e9f097dfda871f409e1f.png",
     "index.html": "/project-avocado/index.html",
-    "main.2b5df3d5.css.map": "/project-avocado/static/css/main.2b5df3d5.css.map",
-    "main.212ce6bf.js.map": "/project-avocado/static/js/main.212ce6bf.js.map",
+    "main.64a13164.css.map": "/project-avocado/static/css/main.64a13164.css.map",
+    "main.74b27179.js.map": "/project-avocado/static/js/main.74b27179.js.map",
     "787.8449e91f.chunk.js.map": "/project-avocado/static/js/787.8449e91f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b5df3d5.css",
-    "static/js/main.212ce6bf.js"
+    "static/css/main.64a13164.css",
+    "static/js/main.74b27179.js"
   ]
 }
