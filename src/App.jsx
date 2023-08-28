@@ -1,21 +1,21 @@
 import './App.css';
-import { Stars, OrbitControls, Cloud } from '@react-three/drei'
-import { Canvas } from '@react-three/fiber';
+// import { Stars, OrbitControls, Cloud } from '@react-three/drei'
+// import { Canvas } from '@react-three/fiber';
 import laptopImage from "./laptop1.png";
 import laptopImage1 from "./laptop2.png";
 import laptopImage2 from "./laptop3.png";
 
-function Exports() {
-	return (
-		<div>
-			<title>Quality app development CSS Template Live Demo</title>
-			<meta name="Keywords" />
-			<meta name="Description" />
-			<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no,width=device-width" />
-			<link href="//fonts.googleapis.com/css?family=Roboto|Open+Sans:200,300,400,700,800,900&amp;subset=latin" rel="preload" as="font" />
-		</div>
-	);
-}
+// function Exports() {
+// 	return (
+// 		<div>
+// 			<title>Quality app development CSS Template Live Demo</title>
+// 			<meta name="Keywords" />
+// 			<meta name="Description" />
+// 			<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no,width=device-width" />
+// 			<link href="//fonts.googleapis.com/css?family=Roboto|Open+Sans:200,300,400,700,800,900&amp;subset=latin" rel="preload" as="font" />
+// 		</div>
+// 	);
+// }
 
 
 function Opening() {
@@ -99,9 +99,9 @@ function Projects() {
 				<div class="pb-5">	
 					<h1 class="z-10 text-4xl md:text-2xl lg:text-5xl text-slate-800">Retail Web App</h1>
 					<p class="z-10 text-sm md:text-l lg:text-xl text-slate-800 pr-40 pt-5 pb-5">
-						I utilized a component-based architecture. With Angular's powerful component-based approach, I structured the application by breaking it down into modular and reusable components. This architecture offered several benefits, including improved code organization, easier maintainability, and enhanced reusability. By following this approach, I created a scalable and flexible e-commerce platform that met the project's requirements.
+						I utilized a component-based architecture. I structured the application by breaking it down into modular and reusable components. This architecture offered several benefits, including improved code organization, easier maintainability, and enhanced reusability. By following this approach, I created a scalable and flexible e-commerce platform that met the project's requirements.
 					</p>
-					<button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 rounded">READ MORE</button>
+					<button  href="https://puntolaptop.com/inicio" target="_blank"  class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 rounded">READ MORE</button>
 				</div>
 				<div class="u-container-style u-layout-cell u-size-34 u-layout-cell-2">
 					<div class="u-container-layout u-valign-middle-sm u-container-layout-2">
@@ -116,7 +116,7 @@ function Projects() {
 					<p class="z-10 text-sm md:text-l lg:text-xl text-slate-800 pr-40 pt-5 pb-5">
 						I developed a SaaS CRM using React, Laravel, and PHP. The project includes features like user authentication, data management, and API integrations. With seamless frontend development in React, efficient backend with Laravel, and server-side processing in PHP, I created a scalable and user-friendly CRM.
 					</p>
-					<button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 rounded">READ MORE</button>
+					<button  href="http://hytechgizmo.com/user/login" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 rounded">READ MORE</button>
 				</div>
 				<div class="u-container-style u-layout-cell u-size-34 u-layout-cell-2">
 					<div class="u-container-layout u-valign-middle-sm u-container-layout-2">
@@ -131,7 +131,7 @@ function Projects() {
 					<p class="z-10 text-sm md:text-l lg:text-xl text-slate-800 pr-40 pt-5 pb-5">
 						With experience in PHP to Laravel migration, I seamlessly integrated these technologies for a robust platform. I also troubleshooted existing issues and utilized React for an intuitive frontend. Explore my portfolio for a successful demonstration of SaaS CRM development with PHP, Laravel, and React.
 					</p>
-					<button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 rounded">READ MORE</button>
+					<button href="https://admin.cleansmarts.com/?view=login" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 rounded">READ MORE</button>
 				</div>
 				<div class="u-container-style u-layout-cell u-size-34 u-layout-cell-2">
 					<div class="u-container-layout u-valign-middle-sm u-container-layout-2">
@@ -145,48 +145,48 @@ function Projects() {
 	);
 }
 
-function Ending() {
-	return (
-		<section>
-			<div>
-				<img class="u-image u-image-1" src="//images01.nicepage.com/c461c07a441a5d220e8feb1a/ced4341162de5d3f9494dc5c/rtt.jpg" data-image-width="1200" data-image-height="1018"/>
-				<div>
-					<h1>Best Android & iPhone App Development Services</h1>
-					<p>Excepteur sint occaecat cupidatat non , sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-				</div>
-				<div class="square">
-				</div>
-			</div>
-		</section>
-	);
-}
+// function Ending() {
+// 	return (
+// 		<section>
+// 			<div>
+// 				<img class="u-image u-image-1" src="//images01.nicepage.com/c461c07a441a5d220e8feb1a/ced4341162de5d3f9494dc5c/rtt.jpg" data-image-width="1200" data-image-height="1018"/>
+// 				<div>
+// 					<h1>Best Android & iPhone App Development Services</h1>
+// 					<p>Excepteur sint occaecat cupidatat non , sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+// 				</div>
+// 				<div class="square">
+// 				</div>
+// 			</div>
+// 		</section>
+// 	);
+// }
 
-function Features() {
-	return (
-		<section>
-			<h4>FEATURES</h4>
-			<h1>Using design to improve product development</h1>
-			<div>
-				<div>
-					<img></img>
-					<h4>Strategy</h4>
-					<p>Strategic planning is an organization’s process for defining their strategy so that they can accomplish specific goals and objectives</p>
-				</div>
-				<div>
-					<img></img>
-					<h4>Strategy</h4>
-					<p>Strategic planning is an organization’s process for defining their strategy so that they can accomplish specific goals and objectives</p>
-				</div>
-				<div>
-					<img></img>
-					<h4>Strategy</h4>
-					<p>Strategic planning is an organization’s process for defining their strategy so that they can accomplish specific goals and objectives</p>
-				</div>
-			</div>
+// function Features() {
+// 	return (
+// 		<section>
+// 			<h4>FEATURES</h4>
+// 			<h1>Using design to improve product development</h1>
+// 			<div>
+// 				<div>
+// 					<img></img>
+// 					<h4>Strategy</h4>
+// 					<p>Strategic planning is an organization’s process for defining their strategy so that they can accomplish specific goals and objectives</p>
+// 				</div>
+// 				<div>
+// 					<img></img>
+// 					<h4>Strategy</h4>
+// 					<p>Strategic planning is an organization’s process for defining their strategy so that they can accomplish specific goals and objectives</p>
+// 				</div>
+// 				<div>
+// 					<img></img>
+// 					<h4>Strategy</h4>
+// 					<p>Strategic planning is an organization’s process for defining their strategy so that they can accomplish specific goals and objectives</p>
+// 				</div>
+// 			</div>
 			
-		</section>
-	);
-}
+// 		</section>
+// 	);
+// }
 
 
 
