@@ -101,7 +101,7 @@ function Projects() {
 					<p class="z-10 text-sm md:text-l lg:text-xl text-slate-800 pr-40 pt-5 pb-5">
 						I utilized a component-based architecture. I structured the application by breaking it down into modular and reusable components. This architecture offered several benefits, including improved code organization, easier maintainability, and enhanced reusability. By following this approach, I created a scalable and flexible e-commerce platform that met the project's requirements.
 					</p>
-					<button  href="https://puntolaptop.com/inicio" target="_blank"  class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 rounded">READ MORE</button>
+					<a  href="https://puntolaptop.com/inicio" target="_blank" rel="noreferrer" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 rounded">READ MORE</a>
 				</div>
 				<div class="u-container-style u-layout-cell u-size-34 u-layout-cell-2">
 					<div class="u-container-layout u-valign-middle-sm u-container-layout-2">
@@ -116,7 +116,7 @@ function Projects() {
 					<p class="z-10 text-sm md:text-l lg:text-xl text-slate-800 pr-40 pt-5 pb-5">
 						I developed a SaaS CRM using React, Laravel, and PHP. The project includes features like user authentication, data management, and API integrations. With seamless frontend development in React, efficient backend with Laravel, and server-side processing in PHP, I created a scalable and user-friendly CRM.
 					</p>
-					<button  href="http://hytechgizmo.com/user/login" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 rounded">READ MORE</button>
+					<a  href="http://hytechgizmo.com/user/login" rel="noreferrer" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 rounded">READ MORE</a>
 				</div>
 				<div class="u-container-style u-layout-cell u-size-34 u-layout-cell-2">
 					<div class="u-container-layout u-valign-middle-sm u-container-layout-2">
@@ -131,7 +131,7 @@ function Projects() {
 					<p class="z-10 text-sm md:text-l lg:text-xl text-slate-800 pr-40 pt-5 pb-5">
 						With experience in PHP to Laravel migration, I seamlessly integrated these technologies for a robust platform. I also troubleshooted existing issues and utilized React for an intuitive frontend. Explore my portfolio for a successful demonstration of SaaS CRM development with PHP, Laravel, and React.
 					</p>
-					<button href="https://admin.cleansmarts.com/?view=login" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 rounded">READ MORE</button>
+					<a href="https://admin.cleansmarts.com/?view=login" target="_blank" rel="noreferrer" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 rounded">READ MORE</a>
 				</div>
 				<div class="u-container-style u-layout-cell u-size-34 u-layout-cell-2">
 					<div class="u-container-layout u-valign-middle-sm u-container-layout-2">
