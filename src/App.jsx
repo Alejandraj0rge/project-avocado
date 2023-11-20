@@ -1,9 +1,30 @@
 import './App.css';
-// import { Stars, OrbitControls, Cloud } from '@react-three/drei'
-// import { Canvas } from '@react-three/fiber';
+import {React, useState} from 'react';
 import laptopImage from "./laptop1.png";
 import laptopImage1 from "./laptop2.png";
 import laptopImage2 from "./laptop3.png";
+import room from "./livingroom.jpg";
+import MontserratRegular from './fonts/Montserrat/static/Montserrat-Regular.ttf';
+import MontserratBold from './fonts/Montserrat/static/Montserrat-Bold.ttf';
+import { MutatingDots } from  'react-loader-spinner';
+
+// function Loader() {
+// 	return (
+// 	<div style={{display: "flex", justifyContent: "center", alignItems: "center", height: "100vh"}}>
+// 		<MutatingDots 
+// 			height="100"
+// 			width="100"
+// 			color="#4fa94d"
+// 			secondaryColor= '#4fa94d'
+// 			radius='12.5'
+// 			ariaLabel="mutating-dots-loading"
+// 			wrapperStyle={{}}
+// 			wrapperClass=""
+// 			visible={true}
+//  		/>
+// 	</div>
+// 	);
+// }
 
 // function Exports() {
 // 	return (
@@ -19,13 +40,33 @@ import laptopImage2 from "./laptop3.png";
 
 
 function Opening() {
+	const [imageLoaded, setImageLoaded] = useState(false);
+
+	const handleImageLoad = () => {
+	  setImageLoaded(true);
+	};
+
+	
 	return (
-		<section class="bg-teal-300 font-bold whitespace-normal">
-			<div class="bg-origin-content p-8">
-				<h1 class="z-10 text-4xl md:text-2xl lg:text-5xl text-slate-100 absolute top-20 left-10">Alejandra Jorge - Web Development</h1>
-				<img src="//images02.nicepage.com/c461c07a441a5d220e8feb1a/d7dc502250955d50b21bd3f8/ad-min.jpg" alt="" class="max-lg md:max-xl lg:max-2xl z-0 mt-8 mr-auto mb-0"></img>
-				<div class="text-sm text-center md:text-xl lg:text-2xl text-teal-500 max-w-2xl object-contain grid grid-flow-row-dense grid-cols-3 grid-rows-1 gap-10">
-					<div class="bg-slate-100 shadow-md">
+		(<section className="font-bold whitespace-normal relative" style={{backgroundColor : "#4a4281"}}>
+			<div className="bg-origin-content p-8">
+				<div id="top-title" className={`absolute top-0 left-0 w-full text-center ${imageLoaded ? 'opacity-100 transition-opacity duration-500' : 'opacity-0'}`}>
+					<h1 className="text-4xl md:text-6xl mb-4">Hey, I'm Alejandra <br></br> a creative developer <br></br> + UX/UI designer.</h1>
+					<div id="contact-me-btns" className="mb-4">
+						<a href="https://t.me/atomPerson32" target="_blank" rel="noreferrer" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 rounded mr-4">Want to discuss?</a>
+						<a href="https://t.me/atomPerson32" target="_blank" rel="noreferrer" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 rounded">Let's talk</a>
+					</div>
+				</div>
+
+				<img 
+					src={room} 
+					id="main-picture-room" 
+					alt="" 
+					className={`max-xl md:max-xl lg:max-2xl z-0 mt-8 mr-auto mb-0`}
+					onLoad={handleImageLoad}>
+				</img>
+				<div class="flex justify-center items-center gap-4 mt-[-50px] md:mt-[-100px] lg:mt-[-150px]" style={{marginLeft: "10px", marginRight: "10px"}}>
+					<div class="flex-1 bg-slate-100 shadow-md text-center item-box" style={{ marginTop: "-50px" }}>
 						<div class="">
 							<svg width="max-content" height="max-content" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M15.4597 24L32.5949 16.8223L44.6372 45.008L27.4267 52.2858L15.4597 24Z" fill="#2A2941" />
@@ -42,10 +83,10 @@ function Opening() {
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M34.3762 28.3515L37.9387 28.8517L36.2076 31.9028L37.186 32.428L39.6949 27.8763L34.5518 27.176L34.3762 28.3515Z" fill="#2A2941" />
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M33.3726 33.9036L33.1719 27.6763H32.0681L32.2437 33.8786L33.3726 33.9036Z" fill="#2A2941" />
 							</svg>
-							<h4>DEVELOPMENT</h4>
+							<h4 class="whitespace-nowrap" style={{ fontSize: '0.7rem', margin: '4px'}}>DEVELOPMENT</h4>
 						</div>
 					</div>
-					<div class="bg-slate-100 shadow-md">
+					<div class="flex-1 bg-slate-100 shadow-md text-center item-box" style={{ marginTop: "-50px" }}>
 						<div class="">
 							<svg width="max-content" height="max-content" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M15.8118 23.9999L32.8467 16.7971L44.8639 45.1579L27.7538 52.4857L15.8118 23.9999Z" fill="#2A2941" />
@@ -63,10 +104,10 @@ function Opening() {
 								<path d="M25.4707 26.4507L24.3417 23.6997C24.2414 23.5246 24.2414 23.2995 24.2916 23.0995C24.3167 23.0244 24.3668 22.9494 24.417 22.8994C24.4672 22.8494 24.5424 22.7993 24.6177 22.7743C24.693 22.7493 24.7682 22.7243 24.8686 22.7243C24.9439 22.7243 25.0442 22.7493 25.1195 22.7743C25.2951 22.8744 25.4205 23.0494 25.4958 23.2245L26.6248 26.0506C26.7251 26.3257 26.8757 26.5758 27.0764 26.8009C27.2269 26.9759 27.4276 27.101 27.6534 27.151C27.9544 27.176 28.2304 27.151 28.5064 27.0259C28.682 26.9759 28.8576 26.8759 29.0081 26.7258C29.1587 26.6008 29.259 26.4257 29.3343 26.2507C29.4096 25.8255 29.3594 25.4003 29.1587 25.0252L28.0297 22.1991C27.9294 22.024 27.9043 21.799 27.9544 21.5989C27.9795 21.5239 28.0297 21.4488 28.0799 21.3738C28.1301 21.3238 28.2053 21.2738 28.3057 21.2488C28.3809 21.2237 28.4562 21.1987 28.5566 21.1987C28.6318 21.1987 28.7322 21.2237 28.8074 21.2488C28.9831 21.3488 29.1336 21.5239 29.1838 21.6989L30.3127 24.45C30.4633 24.8001 30.5887 25.2003 30.6389 25.5754C30.664 25.9255 30.6138 26.2507 30.4633 26.5758C30.3378 26.8509 30.1371 27.101 29.9113 27.3011C29.6354 27.5261 29.3343 27.7012 29.0081 27.8513C28.6318 28.0013 28.2304 28.1264 27.8039 28.1764C27.4778 28.2014 27.1516 28.1764 26.8255 28.0513C26.5244 27.9263 26.2735 27.7262 26.0728 27.4761C25.8219 27.151 25.6212 26.8009 25.4707 26.4257V26.4507Z" fill="#2A2941" />
 								<path d="M31.8933 25.3003L32.395 22.8994L30.5887 21.674C30.4382 21.5739 30.3127 21.4739 30.1873 21.3488C30.112 21.2488 30.0368 21.1488 29.9615 21.0487C29.9364 20.9987 29.9113 20.9237 29.9113 20.8737C29.9113 20.8236 29.9364 20.7486 29.9615 20.6986C30.0368 20.5735 30.1371 20.4735 30.2626 20.4235C30.3378 20.3985 30.4131 20.3735 30.4883 20.3735C30.5636 20.3735 30.6389 20.3985 30.7141 20.4235C30.9148 20.5235 31.1155 20.6486 31.3163 20.7986L32.7714 21.824L33.0975 20.0483C33.1226 19.9233 33.1477 19.7982 33.1728 19.6732C33.1728 19.5732 33.1979 19.4731 33.248 19.3981C33.2731 19.3231 33.3233 19.273 33.3735 19.198C33.4237 19.148 33.4989 19.098 33.5742 19.073C33.6495 19.048 33.6996 19.0229 33.7749 19.0229C33.8502 19.0229 33.9254 19.048 33.9756 19.073C34.0258 19.098 34.076 19.123 34.1261 19.173C34.1763 19.223 34.2014 19.273 34.2265 19.3231C34.3018 19.5982 34.3018 19.8733 34.2265 20.1484L33.7749 22.2992L35.782 23.6747C35.9325 23.7497 36.0579 23.8748 36.1834 23.9748C36.2837 24.0499 36.3339 24.1499 36.3841 24.2499C36.4092 24.35 36.4092 24.425 36.3841 24.525C36.359 24.6251 36.3088 24.7001 36.2586 24.8001C36.1834 24.8752 36.1081 24.9252 36.0328 24.9752C35.9325 25.0002 35.8321 25.0002 35.7067 24.9752C35.6063 24.9752 35.5311 24.9252 35.4558 24.8752L35.0293 24.5751L33.3484 23.4496L32.947 25.5254L32.8717 25.8756C32.8717 25.9506 32.8466 26.0256 32.7965 26.0756C32.7714 26.1507 32.7212 26.2257 32.671 26.2757C32.5958 26.3507 32.5205 26.3757 32.4452 26.4258C32.37 26.4508 32.3198 26.4758 32.2445 26.4758C32.1693 26.4758 32.094 26.4508 32.0438 26.4258C31.9936 26.4008 31.9184 26.3507 31.8682 26.3007C31.818 26.2507 31.7929 26.1757 31.7678 26.1257C31.7177 25.8756 31.7678 25.5754 31.8933 25.3003Z" fill="#2A2941" />
 							</svg>
-							<h4 class="">UX DESIGN</h4>
+							<h4 class="sm:text-lg md:text-xl lg:text-2xl whitespace-nowrap">UX DESIGN</h4>
 						</div>
 					</div>
-					<div class="bg-slate-100 shadow-md">
+					<div class="flex-1 bg-slate-100 shadow-md text-center item-box" style={{ marginTop: "-50px" }}>
 						<div class="">
 							<svg  width="max-content" height="max-content" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M44.7931 29.0514C42.6857 23.0491 37.9692 20.7732 33.955 20.3481C28.4858 19.7728 21.8124 22.699 19.9056 28.9763C18.0491 34.8536 20.4325 39.9555 23.8947 42.7316C26.5038 44.8324 31.3459 47.0332 36.6646 45.2075L44.7931 29.0514Z" fill="#2A2941" />
@@ -82,12 +123,12 @@ function Opening() {
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M24.9986 31.1523C24.8731 30.1269 25.5254 29.3266 26.3784 28.9264C27.2063 28.5263 28.26 28.5263 28.9374 29.2015L29.4141 29.6517L30.3173 28.7263L29.8406 28.2762C28.7618 27.2508 27.1561 27.1507 25.8265 27.776C24.5219 28.4012 23.5434 29.6767 23.7191 31.3023L23.7943 31.9276L25.0738 31.7775L24.9986 31.1523Z" fill="#2A2941" />
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M38.9727 23.7494C37.7935 22.5989 36.1879 22.5489 34.8833 23.1992C33.5787 23.8494 32.6504 25.1749 32.801 26.6505L32.8762 27.3007L34.1557 27.1757L34.0805 26.5254C33.9801 25.5751 34.6324 24.7748 35.4603 24.3496C36.2882 23.9495 37.3168 23.9245 38.0695 24.6497L38.5211 25.0999L39.4243 24.1996L38.9727 23.7494Z" fill="#2A2941" />
 							</svg>
-							<h4 class="">TESTING</h4>
+							<h4 class="sm:text-lg md:text-xl lg:text-3xl whitespace-nowrap">TESTING</h4>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</section>)
 	);
 }
 
@@ -98,45 +139,45 @@ function Projects() {
 			<div class="project">
 				<div class="pb-5">	
 					<h1 class="z-10 text-4xl md:text-2xl lg:text-5xl text-slate-800">Retail Web App</h1>
-					<p class="z-10 text-sm md:text-l lg:text-xl text-slate-800 pr-40 pt-5 pb-5">
+					<p class="w-full text-sm md:text-l lg:text-xl text-slate-800 pr-4 sm:pr-8 md:pr-12 lg:pr-16 pt-5 pb-5">
 						I utilized a component-based architecture. I structured the application by breaking it down into modular and reusable components. This architecture offered several benefits, including improved code organization, easier maintainability, and enhanced reusability. By following this approach, I created a scalable and flexible e-commerce platform that met the project's requirements.
 					</p>
 					<a  href="https://puntolaptop.com/inicio" target="_blank" rel="noreferrer" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 rounded">READ MORE</a>
 				</div>
 				<div class="u-container-style u-layout-cell u-size-34 u-layout-cell-2">
 					<div class="u-container-layout u-valign-middle-sm u-container-layout-2">
-						<div class="w-1/2 h-1/2 sm:w-1/2 sm:h-1/2 md:w-1/2 md:h-1/2 lg:h-full lg:w-1/2 rounded-full bg-teal-200 absolute -z-10"></div>
-						<img src={laptopImage} alt="image" data-image-width="1200" data-image-height="1034"/>
+						<div class="aspect-w-1 aspect-h-1 sm:aspect-w-1 sm:aspect-h-1 md:aspect-w-1 md:aspect-h-1 lg:aspect-w-1 lg:aspect-h-1 rounded-full bg-teal-200 absolute -z-10 dot"></div>
+						<img src={laptopImage} alt="" data-image-width="1200" data-image-height="1034"/>
 					</div>
 				</div>
 			</div>
 			<div class="project">
 				<div class="pb-5">	
 					<h1 class="z-10 text-4xl md:text-2xl lg:text-5xl text-slate-800">CRM Web App</h1>
-					<p class="z-10 text-sm md:text-l lg:text-xl text-slate-800 pr-40 pt-5 pb-5">
+					<p class="w-full text-sm md:text-l lg:text-xl text-slate-800 pr-4 sm:pr-8 md:pr-12 lg:pr-16 pt-5 pb-5">
 						I developed a SaaS CRM using React, Laravel, and PHP. The project includes features like user authentication, data management, and API integrations. With seamless frontend development in React, efficient backend with Laravel, and server-side processing in PHP, I created a scalable and user-friendly CRM.
 					</p>
 					<a  href="http://hytechgizmo.com/user/login" rel="noreferrer" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 rounded">READ MORE</a>
 				</div>
 				<div class="u-container-style u-layout-cell u-size-34 u-layout-cell-2">
 					<div class="u-container-layout u-valign-middle-sm u-container-layout-2">
-						<div class="w-1/2 h-1/2 sm:w-1/2 sm:h-1/2 md:w-1/2 md:h-1/2 lg:h-full lg:w-1/2 rounded-full bg-teal-200 absolute -z-10"></div>
-						<img src={laptopImage1} alt="image" data-image-width="1200" data-image-height="1034"/>
+						<div class="aspect-w-1 aspect-h-1 sm:aspect-w-1 sm:aspect-h-1 md:aspect-w-1 md:aspect-h-1 lg:aspect-w-1 lg:aspect-h-1 rounded-full bg-teal-200 absolute -z-10 dot"></div>
+						<img src={laptopImage1} alt="" data-image-width="1200" data-image-height="1034"/>
 					</div>
 				</div>
 			</div>
 			<div class="project">
 				<div class="pb-5">	
 					<h1 class="z-10 text-4xl md:text-2xl lg:text-5xl text-slate-800">CRM Web App</h1>
-					<p class="z-10 text-sm md:text-l lg:text-xl text-slate-800 pr-40 pt-5 pb-5">
+					<p class="w-full text-sm md:text-l lg:text-xl text-slate-800 pr-4 sm:pr-8 md:pr-12 lg:pr-16 pt-5 pb-5">
 						With experience in PHP to Laravel migration, I seamlessly integrated these technologies for a robust platform. I also troubleshooted existing issues and utilized React for an intuitive frontend. Explore my portfolio for a successful demonstration of SaaS CRM development with PHP, Laravel, and React.
 					</p>
 					<a href="https://admin.cleansmarts.com/?view=login" target="_blank" rel="noreferrer" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 rounded">READ MORE</a>
 				</div>
 				<div class="u-container-style u-layout-cell u-size-34 u-layout-cell-2">
 					<div class="u-container-layout u-valign-middle-sm u-container-layout-2">
-						<div class="w-1/2 h-1/2 sm:w-1/2 sm:h-1/2 md:w-1/2 md:h-1/2 lg:h-full lg:w-1/2 rounded-full bg-teal-200 absolute -z-10"></div>
-						<img src={laptopImage2} alt="image" data-image-width="1200" data-image-height="1034"/>
+						<div class="aspect-w-1 aspect-h-1 sm:aspect-w-1 sm:aspect-h-1 md:aspect-w-1 md:aspect-h-1 lg:aspect-w-1 lg:aspect-h-1 rounded-full bg-teal-200 absolute -z-10 dot"></div>
+						<img src={laptopImage2} alt="" data-image-width="1200" data-image-height="1034"/>
 					</div>
 				</div>
 			</div>
@@ -189,11 +230,87 @@ function Projects() {
 // }
 
 
+function NavBar() {
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+	const toggleMenu = () => {
+		setIsMenuOpen(!isMenuOpen);
+	};
+
+	return (
+		<nav style={{backgroundColor : "#4a4281"}}>
+		<div class="container mx-auto px-4 flex justify-between">
+			<div className="flex md:hidden">
+				<button onClick={toggleMenu} className="text-white">
+				<svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+					<path d="M3 12h18M3 6h18M3 18h18"></path>
+				</svg>
+				</button>
+			</div>
+			<ul className={`md:flex md:justify-between md:items-center ${isMenuOpen ? '' : 'hidden'}`}>
+				<li><a href="/" class="text-white font-bold ml-4">Home</a></li>
+				<li><a href="/" class="text-white font-bold ml-4">Services</a></li>
+				<li><a href="/" class="text-white font-bold ml-4">Portfolios</a></li>
+				<li><a href="/" class="text-white font-bold ml-4">About me</a></li>
+			</ul>
+			<ul class="flex justify-between items-center py-4">
+				<li class=""><a href="https://t.me/atomPerson32" target="_blank" rel="noreferrer" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 rounded font-bold">Let's talk</a></li>
+			</ul>
+		</div>
+		</nav>
+	);
+}
+
 
 function App() {
+	const styles = {
+		fontFamily: 'Montserrat, sans-serif',
+		fontWeight: 'normal',
+		fontStyle: 'normal',
+		src: `url(${MontserratRegular}) format('truetype')`
+	};
+   
+	// For bold text
+	// const boldStyles = {
+	// fontFamily: 'Montserrat, sans-serif',
+	// fontWeight: 'bold',
+	// fontStyle: 'normal',
+	// src: `url(${MontserratBold}) format('truetype')`
+	// };
+
 	return (
-		<div className="App" class="font-sans">
+		<div className="App" style={styles}>
+			<style>
+				{`
+					@font-face {
+					font-family: 'Montserrat';
+					font-weight: normal;
+					font-style: normal;
+					src: url(${MontserratRegular}) format('truetype');
+					}
+
+					@font-face {
+					font-family: 'Montserrat';
+					font-weight: bold;
+					font-style: normal;
+					src: url(${MontserratBold}) format('truetype');
+					}
+
+					.opacity-0 {
+						opacity: 0;
+					}
+					
+					.opacity-100 {
+						opacity: 1;
+					}
+					
+					.transition-opacity {
+						transition-property: opacity;
+					}
+				`}
+			</style>
 			{/* <Exports/> */}
+			<NavBar/>
 			<Opening/>
 			<Projects/>
 			{/* <Ending/> */}
