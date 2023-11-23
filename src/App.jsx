@@ -6,7 +6,7 @@ import laptopImage2 from "./laptop3.png";
 import room from "./livingroom.jpg";
 import MontserratRegular from './fonts/Montserrat/static/Montserrat-Regular.ttf';
 import MontserratBold from './fonts/Montserrat/static/Montserrat-Bold.ttf';
-import { MutatingDots } from  'react-loader-spinner';
+// import { MutatingDots } from  'react-loader-spinner';
 
 // function Loader() {
 // 	return (
@@ -51,7 +51,7 @@ function Opening() {
 		(<section className="font-bold whitespace-normal relative" style={{backgroundColor : "#4a4281"}}>
 			<div className="bg-origin-content p-8">
 				<div id="top-title" className={`absolute top-0 left-0 w-full text-center ${imageLoaded ? 'opacity-100 transition-opacity duration-500' : 'opacity-0'}`}>
-					<h1 className="text-4xl md:text-6xl mb-4">Hey, I'm Alejandra <br></br> a creative developer <br></br> + UX/UI designer.</h1>
+					<h1 className="text-4xl md:text-6xl mb-4 text-purple-200">Hey, I'm Alejandra <br></br> a creative developer <br></br> + UX/UI designer.</h1>
 					<div id="contact-me-btns" className="mb-4">
 						<a href="https://t.me/atomPerson32" target="_blank" rel="noreferrer" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 rounded mr-4">Want to discuss?</a>
 						<a href="https://t.me/atomPerson32" target="_blank" rel="noreferrer" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 rounded">Let's talk</a>
@@ -65,10 +65,10 @@ function Opening() {
 					className={`max-xl md:max-xl lg:max-2xl z-0 mt-8 mr-auto mb-0`}
 					onLoad={handleImageLoad}>
 				</img>
-				<div class="flex justify-center items-center gap-4 mt-[-50px] md:mt-[-100px] lg:mt-[-150px]" style={{marginLeft: "10px", marginRight: "10px"}}>
-					<div class="flex-1 bg-slate-100 shadow-md text-center item-box" style={{ marginTop: "-50px" }}>
-						<div class="">
-							<svg width="max-content" height="max-content" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<div class="flex justify-center items-center gap-4 mt-[-50px] md:mt-[-100px] lg:mt-[-150px]">
+					<div class="flex-1">
+						<div class="item-box flex-1 bg-slate-100 shadow-md text-center sm:mr-2 sm:mb-0 mb-2 h-32 sm:h-64 md:h-80 lg:h-96 w-20 sm:w-60 md:w-60 lg:w-80" style={{ marginTop: "-50px" }}>
+							<svg class="" width="max-content" height="max-content" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M15.4597 24L32.5949 16.8223L44.6372 45.008L27.4267 52.2858L15.4597 24Z" fill="#2A2941" />
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M18.8717 23.2246C18.1692 23.3747 17.4668 23.6498 16.8396 24.0249L17.0904 25.3754C16.5636 25.7506 16.0869 26.2257 15.7357 26.776L14.3307 26.6509C14.0046 27.2761 13.7788 27.9514 13.6534 28.6517L14.9078 29.2519C14.8827 29.8771 14.983 30.5024 15.1837 31.1026L14.1551 32.103C14.4562 32.7282 14.8576 33.3034 15.3343 33.7786L16.6639 33.2034C17.1657 33.6036 17.7427 33.9037 18.3448 34.1037L18.4954 35.4543C19.1978 35.6043 19.9254 35.6293 20.653 35.5543L21.0293 34.2038C21.6816 34.0787 22.3088 33.8286 22.8607 33.4785L24.0399 34.1788C24.6169 33.7536 25.1437 33.2284 25.5452 32.6282L24.7172 31.5528C25.0183 31.0026 25.219 30.3773 25.3194 29.7271L26.6741 29.2519C26.6992 28.5516 26.5989 27.8514 26.3731 27.2011H24.9681C24.7172 26.6259 24.3409 26.1007 23.8642 25.6755L24.3409 24.375C23.789 23.9499 23.1367 23.5998 22.4844 23.3747L21.531 24.4501C20.8788 24.3 20.2265 24.25 19.5742 24.35L18.8717 23.2246ZM18.8717 26.0257C19.7749 25.6505 20.7784 25.6255 21.6816 26.0007C22.5848 26.3508 23.3123 27.0511 23.7137 27.9514C23.8893 28.4016 23.9646 28.8768 23.9395 29.3519C23.9144 29.8271 23.8141 30.3023 23.6134 30.7275C23.4127 31.1526 23.1367 31.5528 22.7855 31.8779C22.4342 32.203 22.0077 32.4531 21.5561 32.6282C20.653 33.0283 19.6494 33.0283 18.7212 32.6782C17.818 32.3281 17.0653 31.6278 16.689 30.7275C16.5134 30.2773 16.4381 29.8021 16.4381 29.3019C16.4632 28.8267 16.5636 28.3516 16.7643 27.9014C16.965 27.4512 17.2661 27.0511 17.6173 26.7259C17.9685 26.4008 18.395 26.1507 18.8466 25.9757L18.8717 26.0257Z" fill="#2A2941" />
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M41.5514 28.3516C40.8489 28.5266 40.1464 28.7767 39.5192 29.1519L39.7701 30.5024C39.2433 30.8775 38.7917 31.3777 38.4154 31.9029L36.9853 31.7779C36.6341 32.4031 36.4083 33.1034 36.2829 33.8036L37.5624 34.4039C37.5373 35.0291 37.6125 35.6543 37.8383 36.2546L36.8097 37.2549C37.1108 37.8802 37.5122 38.4554 37.9889 38.9306L39.3185 38.3554C39.8203 38.7555 40.3973 39.0806 41.0245 39.2557L41.1751 40.6062C41.8775 40.7563 42.6051 40.8063 43.3327 40.7063L43.709 39.3808C44.3613 39.2557 44.9885 39.0056 45.5404 38.6555L46.7196 39.3557C47.3217 38.9306 47.8485 38.4054 48.275 37.8052L47.422 36.7297C47.7231 36.1795 47.9238 35.5543 48.0241 34.9291L49.3789 34.4539C49.404 33.7536 49.3036 33.0784 49.0778 32.4031H47.6478C47.3969 31.8279 47.0206 31.3027 46.5439 30.8775L47.0206 29.577C46.4436 29.1519 45.8164 28.8017 45.1641 28.5766L44.2358 29.6521C43.5835 29.502 42.9312 29.452 42.2789 29.552L41.5263 28.3766V28.3516H41.5514ZM41.5514 31.1776C42.4546 30.8025 43.433 30.8025 44.3362 31.1526C45.2394 31.5028 45.9418 32.203 46.3432 33.0784C46.5189 33.5285 46.5941 34.0037 46.5941 34.5039C46.569 34.9791 46.4687 35.4793 46.268 35.9044C46.0673 36.3546 45.7662 36.7548 45.415 37.0799C45.0637 37.405 44.6372 37.6551 44.1857 37.8302C43.2825 38.2053 42.2789 38.2303 41.3758 37.8802C40.4726 37.5301 39.745 36.8298 39.3436 35.9294C39.168 35.4793 39.0927 35.0041 39.0927 34.5039C39.1178 34.0287 39.2182 33.5535 39.4189 33.1034C39.6196 32.6532 39.8956 32.2781 40.2719 31.9279C40.6231 31.6028 41.0496 31.3527 41.5012 31.1776H41.5514Z" fill="#2A2941" />
@@ -83,12 +83,12 @@ function Opening() {
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M34.3762 28.3515L37.9387 28.8517L36.2076 31.9028L37.186 32.428L39.6949 27.8763L34.5518 27.176L34.3762 28.3515Z" fill="#2A2941" />
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M33.3726 33.9036L33.1719 27.6763H32.0681L32.2437 33.8786L33.3726 33.9036Z" fill="#2A2941" />
 							</svg>
-							<h4 class="whitespace-nowrap" style={{ fontSize: '0.7rem', margin: '4px'}}>DEVELOPMENT</h4>
+							<h4 class="text-xs md:text-base lg:text-lg">DEVELOMENT</h4>
 						</div>
 					</div>
-					<div class="flex-1 bg-slate-100 shadow-md text-center item-box" style={{ marginTop: "-50px" }}>
-						<div class="">
-							<svg width="max-content" height="max-content" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<div class="flex-1">
+						<div class="item-box flex-1 bg-slate-100 shadow-md text-center sm:mr-2 sm:mb-0 mb-2 h-32 sm:h-64 md:h-80 lg:h-96 w-20 sm:w-60 md:w-60 lg:w-80" style={{ marginTop: "-50px" }}>
+							<svg class="" width="max-content" height="max-content" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M15.8118 23.9999L32.8467 16.7971L44.8639 45.1579L27.7538 52.4857L15.8118 23.9999Z" fill="#2A2941" />
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M18.0195 19.7982L35.0795 12.5955L47.0466 40.9312L29.9364 48.259L18.0195 19.7982Z" fill="white" />
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M22.9117 18.2478C22.9117 18.2478 24.2916 19.7484 25.1697 19.6733C27.0262 19.2982 28.7824 18.5479 30.3629 17.4975C31.0403 16.9473 30.9149 14.9465 30.9149 14.9465L22.9117 18.2478Z" fill="#4C5EFD" />
@@ -104,12 +104,12 @@ function Opening() {
 								<path d="M25.4707 26.4507L24.3417 23.6997C24.2414 23.5246 24.2414 23.2995 24.2916 23.0995C24.3167 23.0244 24.3668 22.9494 24.417 22.8994C24.4672 22.8494 24.5424 22.7993 24.6177 22.7743C24.693 22.7493 24.7682 22.7243 24.8686 22.7243C24.9439 22.7243 25.0442 22.7493 25.1195 22.7743C25.2951 22.8744 25.4205 23.0494 25.4958 23.2245L26.6248 26.0506C26.7251 26.3257 26.8757 26.5758 27.0764 26.8009C27.2269 26.9759 27.4276 27.101 27.6534 27.151C27.9544 27.176 28.2304 27.151 28.5064 27.0259C28.682 26.9759 28.8576 26.8759 29.0081 26.7258C29.1587 26.6008 29.259 26.4257 29.3343 26.2507C29.4096 25.8255 29.3594 25.4003 29.1587 25.0252L28.0297 22.1991C27.9294 22.024 27.9043 21.799 27.9544 21.5989C27.9795 21.5239 28.0297 21.4488 28.0799 21.3738C28.1301 21.3238 28.2053 21.2738 28.3057 21.2488C28.3809 21.2237 28.4562 21.1987 28.5566 21.1987C28.6318 21.1987 28.7322 21.2237 28.8074 21.2488C28.9831 21.3488 29.1336 21.5239 29.1838 21.6989L30.3127 24.45C30.4633 24.8001 30.5887 25.2003 30.6389 25.5754C30.664 25.9255 30.6138 26.2507 30.4633 26.5758C30.3378 26.8509 30.1371 27.101 29.9113 27.3011C29.6354 27.5261 29.3343 27.7012 29.0081 27.8513C28.6318 28.0013 28.2304 28.1264 27.8039 28.1764C27.4778 28.2014 27.1516 28.1764 26.8255 28.0513C26.5244 27.9263 26.2735 27.7262 26.0728 27.4761C25.8219 27.151 25.6212 26.8009 25.4707 26.4257V26.4507Z" fill="#2A2941" />
 								<path d="M31.8933 25.3003L32.395 22.8994L30.5887 21.674C30.4382 21.5739 30.3127 21.4739 30.1873 21.3488C30.112 21.2488 30.0368 21.1488 29.9615 21.0487C29.9364 20.9987 29.9113 20.9237 29.9113 20.8737C29.9113 20.8236 29.9364 20.7486 29.9615 20.6986C30.0368 20.5735 30.1371 20.4735 30.2626 20.4235C30.3378 20.3985 30.4131 20.3735 30.4883 20.3735C30.5636 20.3735 30.6389 20.3985 30.7141 20.4235C30.9148 20.5235 31.1155 20.6486 31.3163 20.7986L32.7714 21.824L33.0975 20.0483C33.1226 19.9233 33.1477 19.7982 33.1728 19.6732C33.1728 19.5732 33.1979 19.4731 33.248 19.3981C33.2731 19.3231 33.3233 19.273 33.3735 19.198C33.4237 19.148 33.4989 19.098 33.5742 19.073C33.6495 19.048 33.6996 19.0229 33.7749 19.0229C33.8502 19.0229 33.9254 19.048 33.9756 19.073C34.0258 19.098 34.076 19.123 34.1261 19.173C34.1763 19.223 34.2014 19.273 34.2265 19.3231C34.3018 19.5982 34.3018 19.8733 34.2265 20.1484L33.7749 22.2992L35.782 23.6747C35.9325 23.7497 36.0579 23.8748 36.1834 23.9748C36.2837 24.0499 36.3339 24.1499 36.3841 24.2499C36.4092 24.35 36.4092 24.425 36.3841 24.525C36.359 24.6251 36.3088 24.7001 36.2586 24.8001C36.1834 24.8752 36.1081 24.9252 36.0328 24.9752C35.9325 25.0002 35.8321 25.0002 35.7067 24.9752C35.6063 24.9752 35.5311 24.9252 35.4558 24.8752L35.0293 24.5751L33.3484 23.4496L32.947 25.5254L32.8717 25.8756C32.8717 25.9506 32.8466 26.0256 32.7965 26.0756C32.7714 26.1507 32.7212 26.2257 32.671 26.2757C32.5958 26.3507 32.5205 26.3757 32.4452 26.4258C32.37 26.4508 32.3198 26.4758 32.2445 26.4758C32.1693 26.4758 32.094 26.4508 32.0438 26.4258C31.9936 26.4008 31.9184 26.3507 31.8682 26.3007C31.818 26.2507 31.7929 26.1757 31.7678 26.1257C31.7177 25.8756 31.7678 25.5754 31.8933 25.3003Z" fill="#2A2941" />
 							</svg>
-							<h4 class="sm:text-lg md:text-xl lg:text-2xl whitespace-nowrap">UX DESIGN</h4>
+							<h4 class="text-xs md:text-base lg:text-lg">UX DESIGN</h4>
 						</div>
 					</div>
-					<div class="flex-1 bg-slate-100 shadow-md text-center item-box" style={{ marginTop: "-50px" }}>
-						<div class="">
-							<svg  width="max-content" height="max-content" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<div class="flex-1">
+						<div class="item-box flex-1 bg-slate-100 shadow-md text-center sm:mr-2 sm:mb-0 mb-2 h-32 sm:h-64 md:h-80 lg:h-96 w-20 sm:w-60 md:w-60 lg:w-80" style={{ marginTop: "-50px" }}>
+							<svg class="" width="max-content" height="max-content" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M44.7931 29.0514C42.6857 23.0491 37.9692 20.7732 33.955 20.3481C28.4858 19.7728 21.8124 22.699 19.9056 28.9763C18.0491 34.8536 20.4325 39.9555 23.8947 42.7316C26.5038 44.8324 31.3459 47.0332 36.6646 45.2075L44.7931 29.0514Z" fill="#2A2941" />
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M37.1162 45.7829L45.4956 29.1265L45.4204 28.8264C43.2126 22.499 38.2451 20.1231 34.0052 19.6979C28.2349 19.0727 21.2604 22.1989 19.2283 28.8014C17.3216 34.9537 19.8304 40.3308 23.4431 43.2319C26.1777 45.4577 31.2706 47.7836 36.8402 45.8329L37.1162 45.7829ZM44.0907 29.0015L36.1879 44.6824C31.2455 46.2831 26.7296 44.2073 24.271 42.2315C21.0095 39.5805 18.8018 34.7537 20.5078 29.1765C22.3141 23.2243 28.6614 20.4482 33.8798 21.0234C37.6179 21.3736 42.0585 23.4994 44.0907 29.0015Z" fill="#2A2941" />
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M44.9688 26.5756C42.9115 20.6984 38.2953 18.4475 34.3565 18.0473C28.9876 17.4721 22.4646 20.3482 20.583 26.5006C18.7767 32.2527 21.0848 37.2547 24.4968 39.9807C27.0558 42.0315 31.7975 44.2073 37.0158 42.4066L44.9688 26.5756Z" fill="#FEC34E" />
@@ -123,7 +123,7 @@ function Opening() {
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M24.9986 31.1523C24.8731 30.1269 25.5254 29.3266 26.3784 28.9264C27.2063 28.5263 28.26 28.5263 28.9374 29.2015L29.4141 29.6517L30.3173 28.7263L29.8406 28.2762C28.7618 27.2508 27.1561 27.1507 25.8265 27.776C24.5219 28.4012 23.5434 29.6767 23.7191 31.3023L23.7943 31.9276L25.0738 31.7775L24.9986 31.1523Z" fill="#2A2941" />
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M38.9727 23.7494C37.7935 22.5989 36.1879 22.5489 34.8833 23.1992C33.5787 23.8494 32.6504 25.1749 32.801 26.6505L32.8762 27.3007L34.1557 27.1757L34.0805 26.5254C33.9801 25.5751 34.6324 24.7748 35.4603 24.3496C36.2882 23.9495 37.3168 23.9245 38.0695 24.6497L38.5211 25.0999L39.4243 24.1996L38.9727 23.7494Z" fill="#2A2941" />
 							</svg>
-							<h4 class="sm:text-lg md:text-xl lg:text-3xl whitespace-nowrap">TESTING</h4>
+							<h4 class="text-xs md:text-base lg:text-lg">TESTING</h4>
 						</div>
 					</div>
 				</div>
@@ -137,48 +137,45 @@ function Projects() {
 	return (
 		<section class="p-10">
 			<div class="project">
-				<div class="pb-5">	
+				<div class="">	
 					<h1 class="z-10 text-4xl md:text-2xl lg:text-5xl text-slate-800">Retail Web App</h1>
+					<div class="">
+						<img src={laptopImage} alt="" data-image-width="1200" data-image-height="1034"/>
+					</div>
+				</div>
+				<div class="mb-5">
 					<p class="w-full text-sm md:text-l lg:text-xl text-slate-800 pr-4 sm:pr-8 md:pr-12 lg:pr-16 pt-5 pb-5">
 						I utilized a component-based architecture. I structured the application by breaking it down into modular and reusable components. This architecture offered several benefits, including improved code organization, easier maintainability, and enhanced reusability. By following this approach, I created a scalable and flexible e-commerce platform that met the project's requirements.
 					</p>
 					<a  href="https://puntolaptop.com/inicio" target="_blank" rel="noreferrer" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 rounded">READ MORE</a>
 				</div>
-				<div class="u-container-style u-layout-cell u-size-34 u-layout-cell-2">
-					<div class="u-container-layout u-valign-middle-sm u-container-layout-2">
-						<div class="aspect-w-1 aspect-h-1 sm:aspect-w-1 sm:aspect-h-1 md:aspect-w-1 md:aspect-h-1 lg:aspect-w-1 lg:aspect-h-1 rounded-full bg-teal-200 absolute -z-10 dot"></div>
-						<img src={laptopImage} alt="" data-image-width="1200" data-image-height="1034"/>
-					</div>
-				</div>
 			</div>
 			<div class="project">
 				<div class="pb-5">	
 					<h1 class="z-10 text-4xl md:text-2xl lg:text-5xl text-slate-800">CRM Web App</h1>
+					<div class="">
+						<img src={laptopImage1} alt="" data-image-width="1200" data-image-height="1034"/>
+					</div>
+				</div>
+				<div class="mb-5">
 					<p class="w-full text-sm md:text-l lg:text-xl text-slate-800 pr-4 sm:pr-8 md:pr-12 lg:pr-16 pt-5 pb-5">
 						I developed a SaaS CRM using React, Laravel, and PHP. The project includes features like user authentication, data management, and API integrations. With seamless frontend development in React, efficient backend with Laravel, and server-side processing in PHP, I created a scalable and user-friendly CRM.
 					</p>
 					<a  href="http://hytechgizmo.com/user/login" rel="noreferrer" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 rounded">READ MORE</a>
 				</div>
-				<div class="u-container-style u-layout-cell u-size-34 u-layout-cell-2">
-					<div class="u-container-layout u-valign-middle-sm u-container-layout-2">
-						<div class="aspect-w-1 aspect-h-1 sm:aspect-w-1 sm:aspect-h-1 md:aspect-w-1 md:aspect-h-1 lg:aspect-w-1 lg:aspect-h-1 rounded-full bg-teal-200 absolute -z-10 dot"></div>
-						<img src={laptopImage1} alt="" data-image-width="1200" data-image-height="1034"/>
-					</div>
-				</div>
 			</div>
 			<div class="project">
 				<div class="pb-5">	
 					<h1 class="z-10 text-4xl md:text-2xl lg:text-5xl text-slate-800">CRM Web App</h1>
+					<div class="">
+						<img src={laptopImage2} alt="" data-image-width="1200" data-image-height="1034"/>
+					</div>
+				</div>
+				<div class="mb-5">
 					<p class="w-full text-sm md:text-l lg:text-xl text-slate-800 pr-4 sm:pr-8 md:pr-12 lg:pr-16 pt-5 pb-5">
 						With experience in PHP to Laravel migration, I seamlessly integrated these technologies for a robust platform. I also troubleshooted existing issues and utilized React for an intuitive frontend. Explore my portfolio for a successful demonstration of SaaS CRM development with PHP, Laravel, and React.
 					</p>
 					<a href="https://admin.cleansmarts.com/?view=login" target="_blank" rel="noreferrer" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 rounded">READ MORE</a>
-				</div>
-				<div class="u-container-style u-layout-cell u-size-34 u-layout-cell-2">
-					<div class="u-container-layout u-valign-middle-sm u-container-layout-2">
-						<div class="aspect-w-1 aspect-h-1 sm:aspect-w-1 sm:aspect-h-1 md:aspect-w-1 md:aspect-h-1 lg:aspect-w-1 lg:aspect-h-1 rounded-full bg-teal-200 absolute -z-10 dot"></div>
-						<img src={laptopImage2} alt="" data-image-width="1200" data-image-height="1034"/>
-					</div>
 				</div>
 			</div>
 		</section>
