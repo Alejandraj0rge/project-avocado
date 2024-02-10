@@ -1,8 +1,10 @@
 import './App.css';
-import {React, useState} from 'react';
+import {React, useState, useEffect} from 'react';
 import laptopImage from "./laptop1.png";
 import laptopImage1 from "./laptop2.png";
 import laptopImage2 from "./laptop3.png";
+import prettyLaptopImage from "./laptop.png";
+import prettyDroneImage from "./drone.png";
 import room from "./livingroom.jpg";
 import MontserratRegular from './fonts/Montserrat/static/Montserrat-Regular.ttf';
 import MontserratBold from './fonts/Montserrat/static/Montserrat-Bold.ttf';
@@ -67,7 +69,7 @@ function Opening() {
 				</img>
 				<div class="flex justify-center items-center gap-4 mt-[-50px] md:mt-[-100px] lg:mt-[-150px]">
 					<div class="flex-1">
-						<div class="item-box flex-1 bg-slate-100 shadow-md text-center sm:mr-2 sm:mb-0 mb-2 h-32 sm:h-64 md:h-80 lg:h-96 w-20 sm:w-60 md:w-60 lg:w-80" style={{ marginTop: "-50px" }}>
+						<div class="item-box flex-1 bg-slate-100 shadow-md text-center sm:mr-2 sm:mb-0 mb-2 h-32 sm:h-64 md:h-80 lg:h-96 w-24 sm:w-60 md:w-60 lg:w-80" style={{ marginTop: "-50px" }}>
 							<svg class="" width="max-content" height="max-content" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M15.4597 24L32.5949 16.8223L44.6372 45.008L27.4267 52.2858L15.4597 24Z" fill="#2A2941" />
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M18.8717 23.2246C18.1692 23.3747 17.4668 23.6498 16.8396 24.0249L17.0904 25.3754C16.5636 25.7506 16.0869 26.2257 15.7357 26.776L14.3307 26.6509C14.0046 27.2761 13.7788 27.9514 13.6534 28.6517L14.9078 29.2519C14.8827 29.8771 14.983 30.5024 15.1837 31.1026L14.1551 32.103C14.4562 32.7282 14.8576 33.3034 15.3343 33.7786L16.6639 33.2034C17.1657 33.6036 17.7427 33.9037 18.3448 34.1037L18.4954 35.4543C19.1978 35.6043 19.9254 35.6293 20.653 35.5543L21.0293 34.2038C21.6816 34.0787 22.3088 33.8286 22.8607 33.4785L24.0399 34.1788C24.6169 33.7536 25.1437 33.2284 25.5452 32.6282L24.7172 31.5528C25.0183 31.0026 25.219 30.3773 25.3194 29.7271L26.6741 29.2519C26.6992 28.5516 26.5989 27.8514 26.3731 27.2011H24.9681C24.7172 26.6259 24.3409 26.1007 23.8642 25.6755L24.3409 24.375C23.789 23.9499 23.1367 23.5998 22.4844 23.3747L21.531 24.4501C20.8788 24.3 20.2265 24.25 19.5742 24.35L18.8717 23.2246ZM18.8717 26.0257C19.7749 25.6505 20.7784 25.6255 21.6816 26.0007C22.5848 26.3508 23.3123 27.0511 23.7137 27.9514C23.8893 28.4016 23.9646 28.8768 23.9395 29.3519C23.9144 29.8271 23.8141 30.3023 23.6134 30.7275C23.4127 31.1526 23.1367 31.5528 22.7855 31.8779C22.4342 32.203 22.0077 32.4531 21.5561 32.6282C20.653 33.0283 19.6494 33.0283 18.7212 32.6782C17.818 32.3281 17.0653 31.6278 16.689 30.7275C16.5134 30.2773 16.4381 29.8021 16.4381 29.3019C16.4632 28.8267 16.5636 28.3516 16.7643 27.9014C16.965 27.4512 17.2661 27.0511 17.6173 26.7259C17.9685 26.4008 18.395 26.1507 18.8466 25.9757L18.8717 26.0257Z" fill="#2A2941" />
@@ -87,7 +89,7 @@ function Opening() {
 						</div>
 					</div>
 					<div class="flex-1">
-						<div class="item-box flex-1 bg-slate-100 shadow-md text-center sm:mr-2 sm:mb-0 mb-2 h-32 sm:h-64 md:h-80 lg:h-96 w-20 sm:w-60 md:w-60 lg:w-80" style={{ marginTop: "-50px" }}>
+						<div class="item-box flex-1 bg-slate-100 shadow-md text-center sm:mr-2 sm:mb-0 mb-2 h-32 sm:h-64 md:h-80 lg:h-96 w-24 sm:w-60 md:w-60 lg:w-80" style={{ marginTop: "-50px" }}>
 							<svg class="" width="max-content" height="max-content" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M15.8118 23.9999L32.8467 16.7971L44.8639 45.1579L27.7538 52.4857L15.8118 23.9999Z" fill="#2A2941" />
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M18.0195 19.7982L35.0795 12.5955L47.0466 40.9312L29.9364 48.259L18.0195 19.7982Z" fill="white" />
@@ -108,7 +110,7 @@ function Opening() {
 						</div>
 					</div>
 					<div class="flex-1">
-						<div class="item-box flex-1 bg-slate-100 shadow-md text-center sm:mr-2 sm:mb-0 mb-2 h-32 sm:h-64 md:h-80 lg:h-96 w-20 sm:w-60 md:w-60 lg:w-80" style={{ marginTop: "-50px" }}>
+						<div class="item-box flex-1 bg-slate-100 shadow-md text-center sm:mr-2 sm:mb-0 mb-2 h-32 sm:h-64 md:h-80 lg:h-96 w-24 sm:w-60 md:w-60 lg:w-80" style={{ marginTop: "-50px" }}>
 							<svg class="" width="max-content" height="max-content" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M44.7931 29.0514C42.6857 23.0491 37.9692 20.7732 33.955 20.3481C28.4858 19.7728 21.8124 22.699 19.9056 28.9763C18.0491 34.8536 20.4325 39.9555 23.8947 42.7316C26.5038 44.8324 31.3459 47.0332 36.6646 45.2075L44.7931 29.0514Z" fill="#2A2941" />
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M37.1162 45.7829L45.4956 29.1265L45.4204 28.8264C43.2126 22.499 38.2451 20.1231 34.0052 19.6979C28.2349 19.0727 21.2604 22.1989 19.2283 28.8014C17.3216 34.9537 19.8304 40.3308 23.4431 43.2319C26.1777 45.4577 31.2706 47.7836 36.8402 45.8329L37.1162 45.7829ZM44.0907 29.0015L36.1879 44.6824C31.2455 46.2831 26.7296 44.2073 24.271 42.2315C21.0095 39.5805 18.8018 34.7537 20.5078 29.1765C22.3141 23.2243 28.6614 20.4482 33.8798 21.0234C37.6179 21.3736 42.0585 23.4994 44.0907 29.0015Z" fill="#2A2941" />
@@ -183,6 +185,33 @@ function Projects() {
 	);
 }
 
+function AboutMe() {
+	const [profileInfo, setProfileInfo] = useState(null);
+
+	useEffect(() => {
+		fetch('https://api.linkedin.com/v2/me', {
+			headers: {
+				'Authorization': 'Bearer YOUR_ACCESS_TOKEN'
+			}
+		})
+		.then(response => response.json())
+		.then(data => {
+			setProfileInfo(data);
+		})
+		.catch(error => {
+			console.error('Error fetching profile info:', error);
+		});
+	}, []);
+  
+	// Render profileInfo in your component
+  
+	return (
+	  <section>
+
+	  </section>
+	);
+}
+
 // function Ending() {
 // 	return (
 // 		<section>
@@ -238,13 +267,13 @@ function NavBar() {
 		<nav style={{backgroundColor : "#4a4281"}}>
 		<div class="container mx-auto px-4 flex justify-between">
 			<div className="flex md:hidden">
-				<button onClick={toggleMenu} className="text-white">
+				<button onClick={toggleMenu} className="text-white z-20">
 				<svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
 					<path d="M3 12h18M3 6h18M3 18h18"></path>
 				</svg>
 				</button>
 			</div>
-			<ul className={`md:flex md:justify-between md:items-center ${isMenuOpen ? '' : 'hidden'}`}>
+			<ul className={`md:flex md:justify-between md:items-center ${isMenuOpen ? 'sm:absolute sm:p-4 sm:z-10' : 'hidden'}`}>
 				<li><a href="/" class="text-white font-bold ml-4">Home</a></li>
 				<li><a href="/" class="text-white font-bold ml-4">Services</a></li>
 				<li><a href="/" class="text-white font-bold ml-4">Portfolios</a></li>
@@ -267,6 +296,11 @@ function App() {
 		src: `url(${MontserratRegular}) format('truetype')`
 	};
    
+	const [showModal, setShowModal] = useState(true);
+	const closeModal = () => {
+		setShowModal(false);
+	};
+
 	// For bold text
 	// const boldStyles = {
 	// fontFamily: 'Montserrat, sans-serif',
@@ -306,6 +340,30 @@ function App() {
 					}
 				`}
 			</style>
+			{/* {showModal && (
+				<div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-90 z-50 flex-col">
+					<div className="text-stone-50 p-8">
+						<button onClick={closeModal} className="absolute top-0 right-0 p-8 text-2xl font-extrabold">X</button>
+						<h1 className="text-2xl text-center">How can I help you?</h1>
+					</div>
+					<div className='flex'>
+						<div>
+							<div className="group m-2 relative">
+								<img src={prettyLaptopImage} alt="" data-image-width="1200" data-image-height="1034" className="m-2 mr-16 shadow-md w-36 sm:w-44 md:w-52 lg:w-60 cursor-pointer"/>
+								<div className="hidden group-hover:block absolute bottom-0 left-0 bg-white p-2 rounded-lg shadow-md overflow-visible ">I create interactive websites that provide efficient and innovative solutions to your ideas!</div>
+							</div>
+							<p className="mt-6 text-center text-stone-50 sm:text-md lg:text-xl md:text-lg font-extrabold cursor-pointer">Developer</p>
+						</div>
+						<div>
+							<div className="group m-2 relative">
+								<img src={prettyDroneImage} alt="" data-image-width="1200" data-image-height="1034" className="m-2 shadow shadow-md w-36 sm:w-44 md:w-52 lg:w-60 cursor-pointer"/>
+								<div className="hidden group-hover:block absolute bottom-0 left-0 bg-white p-2 rounded-lg shadow-md overflow-visible">I design efficient and innovative solutions for your electronic proyects!</div>
+							</div>
+							<p className="mt-6 text-center text-stone-50 sm:text-md lg:text-xl md:text-lg font-extrabold cursor-pointer">Electronic Engineer</p>
+						</div>
+					</div>
+				</div>
+			)} */}
 			{/* <Exports/> */}
 			<NavBar/>
 			<Opening/>
